@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20190811005844) do
+=======
+ActiveRecord::Schema.define(version: 20140212205318) do
+>>>>>>> cb1277b06e3e429bbf2beefeda1974ba0fe51a0d
 
   create_table "passengers", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "passengers_taxis", id: false, force: :cascade do |t|
     t.integer "taxi_id",      null: false
     t.integer "passenger_id", null: false
@@ -27,6 +32,11 @@ ActiveRecord::Schema.define(version: 20190811005844) do
     t.datetime "updated_at",   null: false
     t.integer  "passenger_id"
     t.integer  "taxi_id"
+=======
+  create_table "rides", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> cb1277b06e3e429bbf2beefeda1974ba0fe51a0d
   end
 
   create_table "taxis", force: :cascade do |t|
